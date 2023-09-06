@@ -24,17 +24,9 @@ struct LoginView: View {
                 VStack {
                     TextField("Enter your email", text: $email)
                         .textInputAutocapitalization(.none)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
-                        .padding(.horizontal, 24)
+                        .modifier(IGTextFieldModifier())
                     SecureField("Enter your password", text: $password)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
-                        .padding(.horizontal, 24)
+                        .modifier(IGTextFieldModifier())
                 }
                 // forgot password button
                 Button {
@@ -84,7 +76,10 @@ struct LoginView: View {
                 
                 Spacer()
                 Divider()
-                NavigationLink(destination: Text("Sign up")) {
+                NavigationLink(destination:
+                                AddEmailView()
+                    .navigationBarBackButtonHidden()
+                ) {
                     HStack{
                         Text("Don't have an account?")
                         Text("Sign up")
