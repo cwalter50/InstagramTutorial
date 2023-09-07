@@ -13,6 +13,8 @@
 		386CC3C82AA905AE00D93975 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CC3C72AA905AE00D93975 /* CreatePasswordView.swift */; };
 		386CC3CA2AA9070B00D93975 /* CompleteSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CC3C92AA9070B00D93975 /* CompleteSignupView.swift */; };
 		386CC3CC2AA9096200D93975 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CC3CB2AA9096200D93975 /* User.swift */; };
+		386CC3CE2AAA315E00D93975 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CC3CD2AAA315E00D93975 /* CurrentUserProfileView.swift */; };
+		386CC3D02AAA33CE00D93975 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CC3CF2AAA33CE00D93975 /* Post.swift */; };
 		83DECB3B2AA7F9F100BBC917 /* InstagramTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB3A2AA7F9F100BBC917 /* InstagramTutorialApp.swift */; };
 		83DECB3D2AA7F9F100BBC917 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB3C2AA7F9F100BBC917 /* ContentView.swift */; };
 		83DECB3F2AA7F9F200BBC917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DECB3E2AA7F9F200BBC917 /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 		386CC3C72AA905AE00D93975 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		386CC3C92AA9070B00D93975 /* CompleteSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignupView.swift; sourceTree = "<group>"; };
 		386CC3CB2AA9096200D93975 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = InstagramTutorial/Core/Authentication/User.swift; sourceTree = SOURCE_ROOT; };
+		386CC3CD2AAA315E00D93975 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		386CC3CF2AAA33CE00D93975 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Post.swift; path = InstagramTutorial/Core/Profile/Post.swift; sourceTree = SOURCE_ROOT; };
 		83DECB372AA7F9F100BBC917 /* InstagramTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83DECB3A2AA7F9F100BBC917 /* InstagramTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramTutorialApp.swift; sourceTree = "<group>"; };
 		83DECB3C2AA7F9F100BBC917 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				386CC3CB2AA9096200D93975 /* User.swift */,
+				386CC3CF2AAA33CE00D93975 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				83DECB562AA7FC5E00BBC917 /* ProfileView.swift */,
+				386CC3CD2AAA315E00D93975 /* CurrentUserProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -284,7 +290,9 @@
 				83DECB572AA7FC5E00BBC917 /* ProfileView.swift in Sources */,
 				386CC3C62AA904A500D93975 /* CreateUserNameView.swift in Sources */,
 				83DECB3D2AA7F9F100BBC917 /* ContentView.swift in Sources */,
+				386CC3D02AAA33CE00D93975 /* Post.swift in Sources */,
 				83DECB622AA80CB700BBC917 /* LoginView.swift in Sources */,
+				386CC3CE2AAA315E00D93975 /* CurrentUserProfileView.swift in Sources */,
 				83DECB3B2AA7F9F100BBC917 /* InstagramTutorialApp.swift in Sources */,
 				386CC3C22AA901B400D93975 /* AddEmailView.swift in Sources */,
 				83DECB602AA80A2E00BBC917 /* SearchView.swift in Sources */,

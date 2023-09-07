@@ -26,9 +26,8 @@ struct MainTabView: View {
                 .tabItem {
                     Image(systemName: "heart")
                 }
-            NavigationStack {
-                ProfileView()
-            }
+            
+            CurrentUserProfileView()
                 .tabItem {
                     Image(systemName: "person")
                 }

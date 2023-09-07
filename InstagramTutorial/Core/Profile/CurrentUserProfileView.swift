@@ -1,30 +1,27 @@
 //
-//  ProfileView.swift
+//  CurrentUserProfileView.swift
 //  InstagramTutorial
 //
-//  Created by Christopher Walter on 9/5/23.
+//  Created by Christopher Walter on 9/7/23.
 //
 
 import SwiftUI
 
-struct ProfileView: View {
-    
+struct CurrentUserProfileView: View {
     private let gridItems: [GridItem] = [
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1)
     ]
     
-    let user: User
-    
     var body: some View {
-//        NavigationStack {
+        NavigationStack {
             ScrollView {
                 // header
                 VStack(spacing: 10) {
                     // pic and stats
                     HStack {
-                        Image("\(user.profileImageURL ?? "")")
+                        Image("blackpanther3")
                             .resizable()
                             .scaledToFill()
                             .frame(width: 80, height: 80)
@@ -39,16 +36,11 @@ struct ProfileView: View {
                     .padding(.horizontal)
                     // name and bio
                     VStack(alignment: .leading) {
-                        if let fullname = user.fullName {
-                            Text("\(fullname)")
-                                .font(.footnote)
-                                .fontWeight(.semibold)
-                        }
-                        if let bio = user.bio {
-                            Text("\(bio)")
-                                .font(.footnote)
-                        }
-                        
+                        Text("Chadwick Boseman")
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                        Text("Wakanda Forever")
+                            .font(.footnote)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal)
@@ -93,13 +85,12 @@ struct ProfileView: View {
 
                 }
             }
-//        }
+        }
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
-    
+struct CurrentUserProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(user: User.MOCK_USERS[0])
+        CurrentUserProfileView()
     }
 }
