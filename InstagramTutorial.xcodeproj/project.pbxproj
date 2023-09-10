@@ -26,6 +26,10 @@
 		83DECB5E2AA803D100BBC917 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB5D2AA803D100BBC917 /* FeedCell.swift */; };
 		83DECB602AA80A2E00BBC917 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB5F2AA80A2E00BBC917 /* SearchView.swift */; };
 		83DECB622AA80CB700BBC917 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB612AA80CB700BBC917 /* LoginView.swift */; };
+		83DECB642AAE511300BBC917 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB632AAE511300BBC917 /* PostGridView.swift */; };
+		83DECB662AAE51ED00BBC917 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB652AAE51ED00BBC917 /* ProfileHeaderView.swift */; };
+		83DECB682AAE530D00BBC917 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB672AAE530D00BBC917 /* UploadPostView.swift */; };
+		83DECB6A2AAE578700BBC917 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB692AAE578700BBC917 /* UploadPostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,10 @@
 		83DECB5D2AA803D100BBC917 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		83DECB5F2AA80A2E00BBC917 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		83DECB612AA80CB700BBC917 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		83DECB632AAE511300BBC917 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		83DECB652AAE51ED00BBC917 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		83DECB672AAE530D00BBC917 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		83DECB692AAE578700BBC917 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +211,8 @@
 		83DECB532AA7FAFA00BBC917 /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
+				83DECB672AAE530D00BBC917 /* UploadPostView.swift */,
+				83DECB692AAE578700BBC917 /* UploadPostViewModel.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -212,6 +222,8 @@
 			children = (
 				83DECB592AA8009400BBC917 /* UserStatView.swift */,
 				386CC3C32AA903CE00D93975 /* IGTextFieldModifier.swift */,
+				83DECB632AAE511300BBC917 /* PostGridView.swift */,
+				83DECB652AAE51ED00BBC917 /* ProfileHeaderView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -287,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83DECB5E2AA803D100BBC917 /* FeedCell.swift in Sources */,
+				83DECB682AAE530D00BBC917 /* UploadPostView.swift in Sources */,
 				83DECB572AA7FC5E00BBC917 /* ProfileView.swift in Sources */,
 				386CC3C62AA904A500D93975 /* CreateUserNameView.swift in Sources */,
 				83DECB3D2AA7F9F100BBC917 /* ContentView.swift in Sources */,
@@ -294,7 +307,10 @@
 				83DECB622AA80CB700BBC917 /* LoginView.swift in Sources */,
 				386CC3CE2AAA315E00D93975 /* CurrentUserProfileView.swift in Sources */,
 				83DECB3B2AA7F9F100BBC917 /* InstagramTutorialApp.swift in Sources */,
+				83DECB642AAE511300BBC917 /* PostGridView.swift in Sources */,
 				386CC3C22AA901B400D93975 /* AddEmailView.swift in Sources */,
+				83DECB6A2AAE578700BBC917 /* UploadPostViewModel.swift in Sources */,
+				83DECB662AAE51ED00BBC917 /* ProfileHeaderView.swift in Sources */,
 				83DECB602AA80A2E00BBC917 /* SearchView.swift in Sources */,
 				386CC3CC2AA9096200D93975 /* User.swift in Sources */,
 				386CC3C42AA903CE00D93975 /* IGTextFieldModifier.swift in Sources */,
