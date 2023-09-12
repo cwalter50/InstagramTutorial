@@ -1,5 +1,5 @@
 //
-//  CompleteSignupView.swift
+//  CreateUserNameView.swift
 //  InstagramTutorial
 //
 //  Created by Christopher Walter on 9/6/23.
@@ -7,35 +7,38 @@
 
 import SwiftUI
 
-struct CompleteSignupView: View {
+struct CreateUserNameView: View {
+//    @State private var username = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegistrationViewModel
     var body: some View {
-        VStack(spacing: 12) {
-            Spacer()
-            Text("Welcome to Instagram. adsfsafakh@")
+        VStack {
+            Text("Create username")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top)
-                .multilineTextAlignment(.center)
-            Text("Click below to complete registration and start using Instagram")
+            Text("You'll use this username to sign in to your account")
                 .font(.footnote)
-//                .foregroundColor(.gray)
+                .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
-            
-
+            TextField("Email", text: $viewModel.username)
+                .textInputAutocapitalization(.none)
+                .autocapitalization(.none)
+                .modifier(IGTextFieldModifier())
             // next button
-            Button {
-                print("Complete signup")
-            } label: {
-                Text("Complete Signup")
+            NavigationLink(destination: {
+                CreatePasswordView()
+                    .navigationBarBackButtonHidden()
+            }, label: {
+                Text("Next")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                     .frame(width: 360, height: 44)
                     .background(Color(.systemBlue))
                     .cornerRadius(8)
-            }
+            })
             .padding(.vertical)
             Spacer()
             
@@ -53,8 +56,8 @@ struct CompleteSignupView: View {
     }
 }
 
-struct CompleteSignupView_Previews: PreviewProvider {
+struct CreateUserNameView_Previews: PreviewProvider {
     static var previews: some View {
-        CompleteSignupView()
+        CreateUserNameView()
     }
 }
