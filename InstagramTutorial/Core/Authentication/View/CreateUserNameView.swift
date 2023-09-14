@@ -22,7 +22,7 @@ struct CreateUserNameView: View {
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
-            TextField("Email", text: $viewModel.username)
+            TextField("Username", text: $viewModel.username)
                 .textInputAutocapitalization(.none)
                 .autocapitalization(.none)
                 .modifier(IGTextFieldModifier())

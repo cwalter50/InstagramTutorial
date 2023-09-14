@@ -38,6 +38,7 @@
 		83DECB792AB1209A00BBC917 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB782AB1209A00BBC917 /* AuthService.swift */; };
 		83DECB7D2AB121F300BBC917 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB7C2AB121F300BBC917 /* ContentViewModel.swift */; };
 		83DECB802AB123E400BBC917 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB7F2AB123E400BBC917 /* RegistrationViewModel.swift */; };
+		83DECB852AB3A78C00BBC917 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB842AB3A78C00BBC917 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		83DECB782AB1209A00BBC917 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		83DECB7C2AB121F300BBC917 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		83DECB7F2AB123E400BBC917 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		83DECB842AB3A78C00BBC917 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				83DECB7F2AB123E400BBC917 /* RegistrationViewModel.swift */,
+				83DECB842AB3A78C00BBC917 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				83DECB642AAE511300BBC917 /* PostGridView.swift in Sources */,
 				386CC3C22AA901B400D93975 /* AddEmailView.swift in Sources */,
 				83DECB7D2AB121F300BBC917 /* ContentViewModel.swift in Sources */,
+				83DECB852AB3A78C00BBC917 /* LoginViewModel.swift in Sources */,
 				83DECB802AB123E400BBC917 /* RegistrationViewModel.swift in Sources */,
 				83DECB6A2AAE578700BBC917 /* UploadPostViewModel.swift in Sources */,
 				83DECB662AAE51ED00BBC917 /* ProfileHeaderView.swift in Sources */,
