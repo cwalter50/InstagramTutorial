@@ -39,6 +39,7 @@
 		83DECB7D2AB121F300BBC917 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB7C2AB121F300BBC917 /* ContentViewModel.swift */; };
 		83DECB802AB123E400BBC917 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB7F2AB123E400BBC917 /* RegistrationViewModel.swift */; };
 		83DECB852AB3A78C00BBC917 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB842AB3A78C00BBC917 /* LoginViewModel.swift */; };
+		83DECB882AB3B48700BBC917 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB872AB3B48700BBC917 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		83DECB7C2AB121F300BBC917 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		83DECB7F2AB123E400BBC917 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		83DECB842AB3A78C00BBC917 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		83DECB872AB3B48700BBC917 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				83DECB4F2AA7FAA700BBC917 /* Profile */,
 				83DECB502AA7FAB400BBC917 /* Root */,
 				83DECB512AA7FAC100BBC917 /* Search */,
+				83DECB862AB3B46200BBC917 /* Services */,
 				83DECB522AA7FAF100BBC917 /* TabBar */,
 				83DECB532AA7FAFA00BBC917 /* UploadPost */,
 			);
@@ -291,6 +294,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		83DECB862AB3B46200BBC917 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				83DECB872AB3B48700BBC917 /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -377,6 +388,7 @@
 				386CC3C62AA904A500D93975 /* CreateUserNameView.swift in Sources */,
 				83DECB3D2AA7F9F100BBC917 /* ContentView.swift in Sources */,
 				83DECB792AB1209A00BBC917 /* AuthService.swift in Sources */,
+				83DECB882AB3B48700BBC917 /* UserService.swift in Sources */,
 				386CC3D02AAA33CE00D93975 /* Post.swift in Sources */,
 				83DECB622AA80CB700BBC917 /* LoginView.swift in Sources */,
 				386CC3CE2AAA315E00D93975 /* CurrentUserProfileView.swift in Sources */,

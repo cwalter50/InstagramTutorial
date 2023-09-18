@@ -18,7 +18,6 @@ class AuthService {
     static let shared = AuthService()
     
     init() {
-        
         Task { try await loadUserData() }
     }
     @MainActor
