@@ -9,8 +9,6 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    
-    
     let user: User
     
     var posts: [Post] {
