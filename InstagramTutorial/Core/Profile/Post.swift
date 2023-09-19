@@ -23,6 +23,8 @@ extension Post {
     static var MOCK_POSTS: [Post] = [
         .init(id: UUID().uuidString, ownerUid: User.MOCK_USERS[0].id, caption: "Hello world", likes: 106, imageUrl: "blackpanther1", timestamp: Date(), user: User.MOCK_USERS[0]),
         .init(id: UUID().uuidString, ownerUid: User.MOCK_USERS[0].id, caption: "Wakanda Forever", likes: 54, imageUrl: "blackpanther2", timestamp: Date(), user: User.MOCK_USERS[0]),
+        .init(id: UUID().uuidString, ownerUid: User.MOCK_USERS[0].id, caption: "Wakanda Forever", likes: 12, imageUrl: "blackpanther3", timestamp: Date(), user: User.MOCK_USERS[0]),
+        .init(id: UUID().uuidString, ownerUid: User.MOCK_USERS[0].id, caption: "Wakanda Forever", likes: 7, imageUrl: "blackpanther4", timestamp: Date(), user: User.MOCK_USERS[0]),
         .init(id: UUID().uuidString, ownerUid: User.MOCK_USERS[1].id, caption: "Hulk Smash", likes: 3, imageUrl: "hulk3", timestamp: Date(), user: User.MOCK_USERS[1]),
         .init(id: UUID().uuidString, ownerUid: User.MOCK_USERS[1].id, caption: "Hulk Smash a lot. Also Smart", likes: 86, imageUrl: "hulk1", timestamp: Date(), user: User.MOCK_USERS[1]),
         .init(id: UUID().uuidString, ownerUid: User.MOCK_USERS[2].id, caption: "Just a friendly neighborhood type of guy", likes: 2563, imageUrl: "spiderman1", timestamp: Date(), user: User.MOCK_USERS[2]),

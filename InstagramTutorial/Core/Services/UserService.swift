@@ -10,7 +10,15 @@ import SwiftUI
 import Firebase
 
 struct UserService {
-//    func fetchAllUsers() async throws -> [User] {
-//        let snapshot = try await Firestore.firestore().collection("users").getDocuments()
-//    }
+    static func fetchAllUsers() async throws -> [User] {
+        var users = [User]()
+        let snapshot = try await Firestore.firestore().collection("users").getDocuments()
+        let documents = snapshot.documents
+        
+        for doc in documents {
+            print(doc.data())
+        }
+        
+        return users
+    }
 }
