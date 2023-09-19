@@ -45,6 +45,8 @@ struct ProfileView: View {
 struct ProfileView_Previews: PreviewProvider {
     
     static var previews: some View {
-        ProfileView(user: User.MOCK_USERS[0])
+        NavigationStack {
+            ProfileView(user: User.MOCK_USERS[0])
+        }
     }
 }
