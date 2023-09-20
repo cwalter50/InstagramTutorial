@@ -10,15 +10,24 @@ import SwiftUI
 import Firebase
 
 struct UserService {
+    @MainActor
     static func fetchAllUsers() async throws -> [User] {
-        var users = [User]()
+        // This works perfect and does exactly what we want... Teacher is going to show a more elegant way to do the same thing.
+//        var users = [User]()
+//        let snapshot = try await Firestore.firestore().collection("users").getDocuments()
+//        let documents = snapshot.documents
+//
+//        for doc in documents {
+//            print(doc.data())
+//            guard let user = try? doc.data(as: User.self) else { return users }
+//            users.append(user)
+//        }
+//
+//        return users
+        
         let snapshot = try await Firestore.firestore().collection("users").getDocuments()
-        let documents = snapshot.documents
+        return snapshot.documents.compactMap({ try? $0.data(as: User.self) })
         
-        for doc in documents {
-            print(doc.data())
-        }
-        
-        return users
     }
+    
 }
