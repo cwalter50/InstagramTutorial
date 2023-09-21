@@ -17,6 +17,7 @@
 		386CC3D02AAA33CE00D93975 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CC3CF2AAA33CE00D93975 /* Post.swift */; };
 		389212152ABA084000111379 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389212142ABA084000111379 /* SearchViewModel.swift */; };
 		389212352ABB7BA800111379 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389212342ABB7BA800111379 /* EditProfileView.swift */; };
+		3892123B2ABCA23900111379 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3892123A2ABCA23900111379 /* EditProfileViewModel.swift */; };
 		83DECB3B2AA7F9F100BBC917 /* InstagramTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB3A2AA7F9F100BBC917 /* InstagramTutorialApp.swift */; };
 		83DECB3D2AA7F9F100BBC917 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DECB3C2AA7F9F100BBC917 /* ContentView.swift */; };
 		83DECB3F2AA7F9F200BBC917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DECB3E2AA7F9F200BBC917 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		386CC3CF2AAA33CE00D93975 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Post.swift; path = InstagramTutorial/Core/Profile/Post.swift; sourceTree = SOURCE_ROOT; };
 		389212142ABA084000111379 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		389212342ABB7BA800111379 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		3892123A2ABCA23900111379 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		83DECB372AA7F9F100BBC917 /* InstagramTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83DECB3A2AA7F9F100BBC917 /* InstagramTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramTutorialApp.swift; sourceTree = "<group>"; };
 		83DECB3C2AA7F9F100BBC917 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,25 @@
 			isa = PBXGroup;
 			children = (
 				389212142ABA084000111379 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		389212362ABCA1C300111379 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83DECB652AAE51ED00BBC917 /* ProfileHeaderView.swift */,
+				83DECB562AA7FC5E00BBC917 /* ProfileView.swift */,
+				386CC3CD2AAA315E00D93975 /* CurrentUserProfileView.swift */,
+				389212342ABB7BA800111379 /* EditProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		389212372ABCA1CD00111379 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3892123A2ABCA23900111379 /* EditProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -218,10 +239,8 @@
 		83DECB4F2AA7FAA700BBC917 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				83DECB652AAE51ED00BBC917 /* ProfileHeaderView.swift */,
-				83DECB562AA7FC5E00BBC917 /* ProfileView.swift */,
-				386CC3CD2AAA315E00D93975 /* CurrentUserProfileView.swift */,
-				389212342ABB7BA800111379 /* EditProfileView.swift */,
+				389212362ABCA1C300111379 /* View */,
+				389212372ABCA1CD00111379 /* ViewModel */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -409,6 +428,7 @@
 				83DECB572AA7FC5E00BBC917 /* ProfileView.swift in Sources */,
 				386CC3C62AA904A500D93975 /* CreateUserNameView.swift in Sources */,
 				83DECB3D2AA7F9F100BBC917 /* ContentView.swift in Sources */,
+				3892123B2ABCA23900111379 /* EditProfileViewModel.swift in Sources */,
 				83DECB792AB1209A00BBC917 /* AuthService.swift in Sources */,
 				83DECB882AB3B48700BBC917 /* UserService.swift in Sources */,
 				386CC3D02AAA33CE00D93975 /* Post.swift in Sources */,
