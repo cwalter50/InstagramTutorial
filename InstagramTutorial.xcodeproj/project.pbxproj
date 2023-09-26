@@ -102,6 +102,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38046B032AC35FC900CDF2C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83DECB672AAE530D00BBC917 /* UploadPostView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		38046B042AC35FCF00CDF2C9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				83DECB692AAE578700BBC917 /* UploadPostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		389212122ABA082400111379 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,8 +296,8 @@
 		83DECB532AA7FAFA00BBC917 /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
-				83DECB672AAE530D00BBC917 /* UploadPostView.swift */,
-				83DECB692AAE578700BBC917 /* UploadPostViewModel.swift */,
+				38046B042AC35FCF00CDF2C9 /* ViewModel */,
+				38046B032AC35FC900CDF2C9 /* View */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";

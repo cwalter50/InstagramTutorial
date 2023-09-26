@@ -12,6 +12,7 @@ import Firebase
 
 class AuthService {
     
+
     @Published var userSession: FirebaseAuth.User?
     @Published var currentUser: User?
     
@@ -47,7 +48,7 @@ class AuthService {
         self.userSession = Auth.auth().currentUser
         guard let currentUid = userSession?.uid else {return}
         let snapshot = try await Firestore.firestore().collection("users").document(currentUid).getDocument()
-        print("DEBUG: Snapshot data is \(String(describing: snapshot.data()))")
+//        print("DEBUG: Snapshot data is \(String(describing: snapshot.data()))")
         self.currentUser = try? snapshot.data(as: User.self) // decode data...
     }
     
