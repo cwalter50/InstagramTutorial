@@ -14,7 +14,6 @@ import Firebase
 class EditProfileViewModel: ObservableObject {
     @Published var user: User
     
-    
     @Published var selectedImage: PhotosPickerItem? {
         didSet {
             Task  { await loadImage(fromItem: selectedImage) }
