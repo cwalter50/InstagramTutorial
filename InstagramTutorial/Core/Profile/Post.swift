@@ -16,7 +16,7 @@ struct Post: Identifiable, Hashable, Codable {
     var likes: Int
     let imageUrl: String
     let timestamp: Timestamp
-    let user: User?
+    var user: User?
 }
 
 
